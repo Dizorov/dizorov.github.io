@@ -1,0 +1,46 @@
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	color: #323232;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+
+	background-color: #ffffff;
+}
+
+.page__header {
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+
+.main__container {
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+
+.examples__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.examples__item {
+	margin-right: 30px;
+	min-width: 130px;
+	max-width: 260px;
+}
+
+.examples__link {
+	color: #003232;
+	font-size: 30px;
+	line-height: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
