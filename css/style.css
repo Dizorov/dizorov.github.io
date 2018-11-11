@@ -7,7 +7,7 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 
-	background-color: #ffffff;
+	background-color: #f6f6f6;
 }
 
 .page__header {
@@ -50,6 +50,10 @@ body {
 	height: auto;
 }
 
-.examples__link:hover {
+.examples__link:hover,
+.examples__link:focus {
+	outline: none;
 	transform: scale(1.15);
+	box-shadow: 0 8px 20px #727272;
+	margin-bottom: -10px;
 }
