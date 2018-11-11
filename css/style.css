@@ -31,16 +31,25 @@ body {
 }
 
 .examples__item {
-	margin-right: 30px;
-	min-width: 130px;
-	max-width: 260px;
 }
 
 .examples__link {
+	display: block;
 	color: #003232;
 	font-size: 30px;
 	line-height: 40px;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: .15s;
+}
 
+.examples__image {
+	margin: 0;
+	padding: 0;
+	width: 270px;
+	height: auto;
+}
+
+.examples__link:hover {
+	transform: scale(1.15);
 }
