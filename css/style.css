@@ -132,7 +132,7 @@ body {
 	
 	.examples__item {
 		width: 48%;
-		margin-bottom: 35px;
+		margin-bottom: 30px;
 	}
 
 	.examples__hidden-area {
@@ -148,8 +148,17 @@ body {
 
 @media (min-width: 1200px) {
 
+	.examples__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(340px, 360px));
+		grid-template-rows: repeat(auto-fill, 1fr);
+		grid-gap: 35px
+	}
+
 	.examples__item {
-		width: 31%;
+		margin: 0;
+		width: 100%;
+		height: auto;
 	}
 
 }
