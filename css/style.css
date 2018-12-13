@@ -28,6 +28,7 @@ body {
 	margin: 0;
 	padding: 0 20px;
 	background-color: transparent;
+	transition: .2s ease-out;
 }
 
 .page-header__navbar--active {
@@ -38,6 +39,8 @@ body {
 .navbar__logo {
 	margin: 0;
 	padding: 14px;
+	color: #d0d0d0;
+	font-weight: 600;
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -63,7 +66,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: #eeeeee;
-	transition: .3s;
+	transition: .2s;
 }
 
 .menu-icon__bar-line::after,
@@ -100,13 +103,17 @@ body {
 }
 
 .navbar__nav {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	align-self: flex-start;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	text-align: center;
+}
+
+.navbar__nav--active {
+	display: flex;
 }
 
 .nav__item {
