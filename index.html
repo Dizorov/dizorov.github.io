@@ -5,75 +5,95 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Портфолио Dizorov</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	
-	<header class="page__header">
-		<p>Портфолио Дмитрия Дизорова</p>
+	<header class="page-header">
+		<nav class="page-header__navbar page-header__navbar--active">
+			<p class="navbar__logo">dizorov</p>
+			<div class="navbar__menu-icon">
+				<div class="menu-icon__bar">
+					<span class="menu-icon__bar-line menu-icon__bar-line--active"></span>
+				</div>
+			</div>
+			<ul class="navbar__nav">
+				<li class="nav__item"><a href="#aboutme" class="nav__link">обо мне</a></li>
+				<li class="nav__item"><a href="#skills" class="nav__link">мои навыки</a></li>
+				<li class="nav__item"><a href="#portfolio" class="nav__link">портфолио</a></li>
+				<li class="nav__item"><a href="#contacts" class="nav__link">контакты</a></li>
+			</ul>
+		</nav>
+		<section class=""></section>
 	</header>
 
 	<main class="main__container">
-		<ul class="examples__list">
-			<li class="examples__item" tabindex="1">
-				<a class="examples__link" href="https://dizorov.github.io/blueasy" target="_blank" tabindex="-1">
-					<img class="examples__image" src="img/blueasy.jpg" width="800" height="685" alt>
-				</a>
-				<div class="examples__hidden-area">
-					<div class="hidden-area__block">
-						<a href="https://dizorov.github.io/blueasy" class="hidden-area__link" target="_blank">Просмотр результата</a>
-						<a href="https://github.com/Dizorov/blueasy" class="hidden-area__link" target="_blank">Просмотр кода</a>
+
+		<section class="portfolio" id="portfolio">
+			<h2>Портфолио</h2>
+			<ul class="examples__list">
+				<li class="examples__item" tabindex="1">
+					<a class="examples__link" href="https://dizorov.github.io/blueasy" target="_blank" tabindex="-1">
+						<img class="examples__image" src="img/blueasy.jpg" width="800" height="685" alt>
+					</a>
+					<div class="examples__hidden-area">
+						<div class="hidden-area__block">
+							<a href="https://dizorov.github.io/blueasy" class="hidden-area__link" target="_blank">Просмотр результата</a>
+							<a href="https://github.com/Dizorov/blueasy" class="hidden-area__link" target="_blank">Просмотр кода</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li class="examples__item" tabindex="1">
-				<a class="examples__link" href="https://dizorov.github.io/twobytes" target="_blank" tabindex="-1">
-					<img class="examples__image" src="img/twobytes.jpg" width="800" height="685" alt>
-				</a>
-				<div class="examples__hidden-area">
-					<div class="hidden-area__block">
-						<a href="https://dizorov.github.io/twobytes" class="hidden-area__link" target="_blank">Просмотр результата</a>
-						<a href="https://github.com/Dizorov/twobytes" class="hidden-area__link" target="_blank">Просмотр кода</a>
+				</li>
+				<li class="examples__item" tabindex="1">
+					<a class="examples__link" href="https://dizorov.github.io/twobytes" target="_blank" tabindex="-1">
+						<img class="examples__image" src="img/twobytes.jpg" width="800" height="685" alt>
+					</a>
+					<div class="examples__hidden-area">
+						<div class="hidden-area__block">
+							<a href="https://dizorov.github.io/twobytes" class="hidden-area__link" target="_blank">Просмотр результата</a>
+							<a href="https://github.com/Dizorov/twobytes" class="hidden-area__link" target="_blank">Просмотр кода</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li class="examples__item" tabindex="1">
-				<a class="examples__link" href="https://dizorov.github.io/nerds" target="_blank" tabindex="-1">
-					<img class="examples__image" src="img/nerds.jpg" width="800" height="685" alt>
-				</a>
-				<div class="examples__hidden-area">
-					<div class="hidden-area__block">
-						<a href="https://dizorov.github.io/nerds" class="hidden-area__link" target="_blank">Просмотр результата</a>
-						<a href="https://github.com/Dizorov/nerds" class="hidden-area__link" target="_blank">Просмотр кода</a>
+				</li>
+				<li class="examples__item" tabindex="1">
+					<a class="examples__link" href="https://dizorov.github.io/nerds" target="_blank" tabindex="-1">
+						<img class="examples__image" src="img/nerds.jpg" width="800" height="685" alt>
+					</a>
+					<div class="examples__hidden-area">
+						<div class="hidden-area__block">
+							<a href="https://dizorov.github.io/nerds" class="hidden-area__link" target="_blank">Просмотр результата</a>
+							<a href="https://github.com/Dizorov/nerds" class="hidden-area__link" target="_blank">Просмотр кода</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li class="examples__item" tabindex="1">
-				<a class="examples__link" href="https://dizorov.github.io/technomart" target="_blank" tabindex="-1">
-					<img class="examples__image" src="img/technomart.jpg" width="800" height="692" alt>
-				</a>
-				<div class="examples__hidden-area">
-					<div class="hidden-area__block">
-						<a href="https://dizorov.github.io/technomart" class="hidden-area__link" target="_blank">Просмотр результата</a>
-						<a href="https://github.com/Dizorov/technomart" class="hidden-area__link" target="_blank">Просмотр кода</a>
+				</li>
+				<li class="examples__item" tabindex="1">
+					<a class="examples__link" href="https://dizorov.github.io/technomart" target="_blank" tabindex="-1">
+						<img class="examples__image" src="img/technomart.jpg" width="800" height="692" alt>
+					</a>
+					<div class="examples__hidden-area">
+						<div class="hidden-area__block">
+							<a href="https://dizorov.github.io/technomart" class="hidden-area__link" target="_blank">Просмотр результата</a>
+							<a href="https://github.com/Dizorov/technomart" class="hidden-area__link" target="_blank">Просмотр кода</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li class="examples__item" tabindex="1">
-				<a class="examples__link" href="https://dizorov.github.io/gllacy" target="_blank" tabindex="-1">
-					<img class="examples__image" src="img/gllacy.jpg" width="800" height="632" alt>
-				</a>
-				<div class="examples__hidden-area">
-					<div class="hidden-area__block">
-						<a href="https://dizorov.github.io/gllacy" class="hidden-area__link" target="_blank">Просмотр результата</a>
-						<a href="https://github.com/Dizorov/gllacy" class="hidden-area__link" target="_blank">Просмотр кода</a>
+				</li>
+				<li class="examples__item" tabindex="1">
+					<a class="examples__link" href="https://dizorov.github.io/gllacy" target="_blank" tabindex="-1">
+						<img class="examples__image" src="img/gllacy.jpg" width="800" height="632" alt>
+					</a>
+					<div class="examples__hidden-area">
+						<div class="hidden-area__block">
+							<a href="https://dizorov.github.io/gllacy" class="hidden-area__link" target="_blank">Просмотр результата</a>
+							<a href="https://github.com/Dizorov/gllacy" class="hidden-area__link" target="_blank">Просмотр кода</a>
+						</div>
 					</div>
-				</div>
-			</li>
-		</ul>
+				</li>
+			</ul>
+		</section>
 	</main>
 
 	<footer class="page__footer"></footer>
+
+	<script src="js/main.js"></script>
 
 </body>
 </html>
