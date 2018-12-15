@@ -17,6 +17,7 @@ body {
 	margin: 0 auto;
 	background-image: url(../img/ocean.jpg);
 	background-repeat: repeat;
+	background-attachment: fixed;
 	color: #eeeeee;
 }
 
@@ -42,7 +43,7 @@ body {
 	cursor: default;
 	margin: 0;
 	padding: 14px 0;
-	color: #d0d0d0;
+	color: #51aff6;
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 24px;
@@ -135,13 +136,13 @@ body {
 }
 
 .nav__link:hover {
-	color: #c0c0c0;
-	box-shadow: inset 0 -2px 0 #c0c0c0;
+	color: #51aff6;
+	box-shadow: inset 0 -2px 0 #51aff6;
 }
 
 .nav__link:active {
-	color: #a0a0a0;
-	box-shadow: inset 0 -2px 0 #a0a0a0;
+	color: #409ee5;
+	box-shadow: inset 0 -2px 0 #409ee5;
 }
 
 .page-header__welcome {
@@ -162,20 +163,61 @@ body {
 }
 
 .welcome__text {
-	font-size: 16px;
-	line-height: 23px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: 600;
 }
 
 .main__container {
 	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
 	margin: 0 auto;
 }
 
+.aboutme__header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.aboutme__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+
+.aboutme__photo {
+	width: 100%;
+	height: auto;
+}
+
+.aboutme__text {
+	display: block;
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.skills {
+	background-color: #51aff6;
+}
+
+.skills__header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .portfolio {
+	width: 90%;
 	min-height: 100vh;
+	margin: 0 auto;
 	padding: 20px 0;
+}
+
+.portfolio__header {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .examples__list {
@@ -270,6 +312,11 @@ body {
 	transform: scale(1.05);
 }
 
+.contacts__header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
 @media (min-width: 768px) {
 	
 	.page-header__navbar {
@@ -303,8 +350,24 @@ body {
 		line-height: 24px;
 	}
 
-	.main__container {
+	.aboutme {
+		padding: 45px 0;
+	}
+
+	.aboutme__header {
+		margin-top: 0;
+		margin-bottom: 35px;
+	}
+
+	.aboutme__container {
 		width: 90%;
+		flex-wrap: nowrap;
+	}
+
+	.aboutme__text {
+		margin-top: 0;
+		padding: 0 30px;
+		font-size: 20px;
 	}
 
 	.examples__list {
