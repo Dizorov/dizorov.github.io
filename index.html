@@ -9,7 +9,7 @@
 </head>
 <body>
 	
-	<header class="page-header">
+	<header class="page-header" id="header">
 		<nav class="page-header__navbar">
 			<p class="navbar__logo">dizorov</p>
 			<div class="navbar__menu-icon">
@@ -26,14 +26,31 @@
 		</nav>
 		<section class="page-header__welcome">
 			<h2 class="welcome__header">Привет, я дмитрий!</h2>
-			<p class="welcome__text">Я начинающий front-end разработчик, который ищет стажировку или работу по специальности HTML-верстальщик в г.Санкт-Петербурге или удалённо.</p>
+			<p class="welcome__text">Я начинающий Front-End разработчик, ищу стажировку или работу по специальности HTML-верстальщик в г.Санкт-Петербурге или удалённо.</p>
 		</section>
 	</header>
 
 	<main class="main__container">
 
+		<section class="aboutme" id="aboutme">
+			<h2 class="aboutme__header">Обо мне</h2>
+			<div class="aboutme__container">
+				<div class="aboutme__column">
+					<img class="aboutme__photo" src="img/avatarka.jpg" alt="dizorov">
+				</div>
+				<div class="aboutme__column">
+					<p class="aboutme__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					<p class="aboutme__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills">
+			<h2 class="skills__header">Мои навыки</h2>
+		</section>
+
 		<section class="portfolio" id="portfolio">
-			<h2>Портфолио</h2>
+			<h2 class="portfolio__header">Портфолио</h2>
 			<ul class="examples__list">
 				<li class="examples__item" tabindex="1">
 					<a class="examples__link" href="https://dizorov.github.io/blueasy" target="_blank" tabindex="-1">
@@ -92,6 +109,12 @@
 				</li>
 			</ul>
 		</section>
+
+		<section class="contacts" id="contacts">
+			<h2 class="contacts__header">Мои контакты</h2>
+			<div class="contacts__container"></div>
+		</section>
+
 	</main>
 
 	<footer class="page__footer"></footer>
