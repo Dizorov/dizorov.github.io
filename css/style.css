@@ -199,6 +199,31 @@ body {
 	line-height: 24px;
 }
 
+.aboutme__list {
+	margin: 0;
+	padding: 0 20px;
+	list-style: none;
+}
+
+.aboutme__item {
+	position: relative;
+	/*margin: 3px 0;*/
+	padding: 0;
+	padding-left: 19px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.aboutme__item::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 2px;
+	top: 13px;
+	left: 1px;
+	background-color: #51aff6;
+}
+
 .skills {
 	/*background-color: #51aff6;*/
 }
@@ -353,7 +378,8 @@ body {
 	.flex-container {
 		display: flex;
 		justify-content: space-between;
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.aboutme {
@@ -367,14 +393,19 @@ body {
 	}
 
 	.aboutme__container {
-		width: 90%;
 		flex-wrap: nowrap;
 	}
 
 	.aboutme__text {
 		margin-top: 0;
+		margin-bottom: 16px;
 		padding: 0 30px;
 		font-size: 20px;
+	}
+
+	.aboutme__list {
+		list-style: none;
+		padding: 0 30px;
 	}
 
 	.skills {
