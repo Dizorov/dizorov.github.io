@@ -174,6 +174,11 @@ body {
 	margin: 0 auto;
 }
 
+.aboutme {
+	border-bottom: 1px solid #c0c0c0;
+	padding-bottom: 22px;
+}
+
 .aboutme__header {
 	text-transform: uppercase;
 	text-align: center;
@@ -189,7 +194,12 @@ body {
 	margin: 0 auto;
 }
 
+.aboutme__column {
+	margin: 0 auto;
+}
+
 .aboutme__photo {
+	display: block;
 	width: 100%;
 	height: auto;
 }
@@ -231,7 +241,8 @@ body {
 }
 
 .skills {
-	/*background-color: #51aff6;*/
+	padding-bottom: 20px;
+	border-bottom: 1px solid #c0c0c0;
 }
 
 .skills__header {
@@ -239,8 +250,39 @@ body {
 	text-align: center;
 }
 
+.skills__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.skills__item {
+	position: relative;
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0;
+	padding-bottom: 21px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.skills__item::after {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 1px;
+	/*border-bottom: 1px dashed #a0a0a0;*/
+	background-color: #d0d0d0;
+	box-shadow: 0 1px 4px 1px #909090;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .skills__image {
 	display: block;
+	margin-top: 5px;
 	width: 200px;
 	height: 200px;
 }
@@ -390,6 +432,7 @@ body {
 	.flex-container {
 		width: 90%;
 		margin: 0 auto;
+		border-bottom: 1px solid #c0c0c0;
 	}
 
 	.aboutme__container {
@@ -405,6 +448,26 @@ body {
 	.aboutme__list {
 		list-style: none;
 		padding: 0 30px;
+	}
+
+	.skills {
+		margin-bottom: 23px;
+		border: none;
+	}
+
+	.skills__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.skills__image {
+		margin: 0;
+		width: 180px;
+		height: 180px;
+	}
+
+	.portfolio {
+		padding: 0;
 	}
 
 	.examples__list {
@@ -430,7 +493,7 @@ body {
 
 }
 
-@media (min-width: 1158px) {
+@media (min-width: 1150px) {
 
 	.navbar_nav {
 		width: 700px;
@@ -455,6 +518,7 @@ body {
 	.aboutme {
 		width: 50%;
 		padding: 45px 0;
+		border: none;
 	}
 
 	.aboutme__header {
@@ -470,6 +534,25 @@ body {
 	.skills__header {
 		margin-top: 0;
 		margin-bottom: 35px;
+	}
+
+	.skills__item {
+		width: 160px;
+	}
+
+	.skills__image {
+		margin: 0 auto;
+		width: 140px;
+		height: 140px;
+	}
+
+	.portfolio {
+		padding: 45px 0;
+	}
+
+	.portfolio__header {
+		margin-top: 0;
+		margin-bottom: 45px;
 	}
 
 	.examples__list {
