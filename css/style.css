@@ -177,6 +177,8 @@ body {
 .aboutme__header {
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 21px;
 }
 
 .aboutme__container {
@@ -224,6 +226,10 @@ body {
 	background-color: #51aff6;
 }
 
+.flex__container {
+	display: block;
+}
+
 .skills {
 	/*background-color: #51aff6;*/
 }
@@ -231,6 +237,12 @@ body {
 .skills__header {
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.skills__image {
+	display: block;
+	width: 100px;
+	height: 100px;
 }
 
 .portfolio {
@@ -376,20 +388,8 @@ body {
 	}
 
 	.flex-container {
-		display: flex;
-		justify-content: space-between;
 		width: 90%;
 		margin: 0 auto;
-	}
-
-	.aboutme {
-		width: 50%;
-		padding: 45px 0;
-	}
-
-	.aboutme__header {
-		margin-top: 0;
-		margin-bottom: 35px;
 	}
 
 	.aboutme__container {
@@ -405,16 +405,6 @@ body {
 	.aboutme__list {
 		list-style: none;
 		padding: 0 30px;
-	}
-
-	.skills {
-		width: 50%;
-		padding: 45px 0;
-	}
-
-	.skills__header {
-		margin-top: 0;
-		margin-bottom: 35px;
 	}
 
 	.examples__list {
@@ -455,6 +445,31 @@ body {
 		font-size: 21px;
 		line-height: 32px;
 		letter-spacing: 1px;
+	}
+
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.aboutme {
+		width: 50%;
+		padding: 45px 0;
+	}
+
+	.aboutme__header {
+		margin-top: 0;
+		margin-bottom: 35px;
+	}
+
+	.skills {
+		width: 50%;
+		padding: 45px 0;
+	}
+
+	.skills__header {
+		margin-top: 0;
+		margin-bottom: 35px;
 	}
 
 	.examples__list {
