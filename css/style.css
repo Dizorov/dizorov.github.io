@@ -345,7 +345,7 @@ body {
 
 	transform: translateY(-50%);
 
-	background-color: #c1c1c1bb;
+	background-color: rgba(150,150,150, 0.6);
 }
 
 .hidden-area__link {
@@ -651,8 +651,8 @@ body {
 	}
 
 	.examples__item {
-		margin: 0;
-		width: 100%;
+		display: -ms-inline-block;
+		min-width: 340px;
 		height: auto;
 	}
 
