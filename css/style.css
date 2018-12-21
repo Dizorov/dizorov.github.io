@@ -653,6 +653,7 @@ body {
 	.examples__item {
 		display: -ms-inline-block;
 		min-width: 340px;
+		margin: 0;
 		height: auto;
 	}
 
