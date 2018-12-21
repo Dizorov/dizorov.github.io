@@ -647,7 +647,7 @@ body {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(340px, 360px));
 		grid-template-rows: repeat(auto-fill, 1fr);
-		grid-gap: 35px
+		grid-gap: 35px;
 	}
 
 	.examples__item {
