@@ -252,14 +252,18 @@ body {
 }
 
 .skills__list {
-	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 20px;
 	padding: 0;
 	list-style: none;
 }
 
 .skills__item {
 	position: relative;
-	width: 200px;
+	width: 95px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 0;
@@ -268,7 +272,12 @@ body {
 	font-weight: 600;
 }
 
+.skills__skill-text {
+	display: none;
+}
+
 .skills__item::after {
+	display: none;
 	content: "";
 	position: absolute;
 	width: 80px;
@@ -284,8 +293,8 @@ body {
 .skills__image {
 	display: block;
 	margin-top: 5px;
-	width: 200px;
-	height: 200px;
+	width: 85px;
+	height: 85px;
 }
 
 .portfolio {
@@ -527,12 +536,26 @@ body {
 	.skills__list {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	.skills__item {
+		width: 160px;
+	}
+
+	.skills__item::after {
+		display: block;
+	}
+
+	.skills__skill-text {
+		display: block;
 	}
 
 	.skills__image {
 		margin: 0;
-		width: 180px;
-		height: 180px;
+		width: 150px;
+		height: 150px;
 	}
 
 	.portfolio {
@@ -620,6 +643,10 @@ body {
 	.skills__header {
 		margin-top: 0;
 		margin-bottom: 35px;
+	}
+
+	.skills__list {
+		justify-content: flex-start;
 	}
 
 	.skills__item {
