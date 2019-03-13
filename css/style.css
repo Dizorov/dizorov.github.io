@@ -133,6 +133,7 @@ body {
 	line-height: 22px;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: .12s ease-out;
 }
 
 .nav__link:hover {
@@ -167,6 +168,31 @@ body {
 	line-height: 24px;
 	font-weight: 600;
 	letter-spacing: 1px;
+}
+
+.welcome__button {
+	display: block;
+	width: 150px;
+	margin: 45px auto 0;
+	padding: 15px 25px;
+	color: #f0f0f0;
+	font-size: 20px;
+	/*font-weight: 600;*/
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid #f0f0f0;
+	transition: .12s ease-out;
+}
+
+.welcome__button:hover {
+	color: #51aff6;
+	border-color: #51aff6;
+}
+
+.welcome__button:active {
+	color: #3f8dd4;
+	border-color: #3f8dd4;
 }
 
 .main__container {
