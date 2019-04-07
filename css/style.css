@@ -698,7 +698,7 @@ body {
 
 	.examples__list {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(340px, 360px));
+		grid-template-columns: repeat(3, minmax(340px, 340px));
 		grid-template-rows: repeat(auto-fill, 1fr);
 		grid-gap: 35px;
 	}
@@ -710,4 +710,15 @@ body {
 		height: auto;
 	}
 
+}
+
+@media (min-width: 1280px) {
+
+	body {
+		max-width: 1920px;
+	}
+
+	.main__container {
+		max-width: 1400px;
+	}
 }
