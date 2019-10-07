@@ -247,7 +247,7 @@ body {
 
 .aboutme__item {
 	position: relative;
-	/*margin: 3px 0;*/
+	margin: 5px 0;
 	padding: 0;
 	padding-left: 19px;
 	font-size: 18px;
@@ -356,6 +356,8 @@ body {
 	text-transform: uppercase;
 
 	transition: .15s;
+
+	overflow: hidden;
 }
 
 .examples__hidden-area {
@@ -417,15 +419,19 @@ body {
 	display: block;
 	max-width: 100%;
 	height: auto;
+
+	transition: .1s all ease-out;
 }
 
 .examples__item:hover,
 .examples__item:focus {
 	outline: none;
-	box-shadow: 0 8px 20px #727272;
-	transform: scale(1.05);
+	box-shadow: 0 7px 15px #828282;
 }
-
+.examples__item:hover .examples__image,
+.examples__item:focus .examples__image {
+	transform: scale(1.03);
+}
 .contacts {
 	width: 100%;
 	border-top: 1px solid #c0c0c0;
@@ -699,14 +705,14 @@ body {
 
 	.examples__list {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(340px, 340px));
-		grid-template-rows: repeat(auto-fill, 1fr);
+		grid-template-columns: repeat(3, minmax(340px, 400px));
 		grid-gap: 35px;
 	}
 
 	.examples__item {
 		display: -ms-inline-block;
-		min-width: 340px;
+		/*min-width: 340px;*/
+		width: 100%;
 		margin: 0;
 		height: auto;
 	}
