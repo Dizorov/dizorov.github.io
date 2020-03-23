@@ -22,16 +22,18 @@ body {
 }
 
 .page-header__navbar {
-	position: relative;
+	position: fixed;
+  width: 100%;
+  max-width: 1920px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: 0;
 	padding: 0 20px;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.4);
 	transition: .2s ease-out;
 	z-index: 30;
+  box-sizing: border-box;
 }
 
 .page-header__navbar--active {
