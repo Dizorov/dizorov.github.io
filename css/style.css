@@ -15,7 +15,7 @@ body {
 .page-header {
 	height: 100vh;
 	margin: 0 auto;
-	background-image: url(../img/ocean.jpg);
+	background-image: url(../img/chalkboard.jpg);
 	background-repeat: repeat;
 	background-attachment: fixed;
 	color: #eeeeee;
@@ -369,7 +369,7 @@ body {
 	height: 100%;
 
 	background-color: transparent;
-	
+
 	transition: .15s;
 
 	opacity: 0;
@@ -508,7 +508,7 @@ body {
 }
 
 @media (min-width: 768px) {
-	
+
 	.page-header__navbar {
 		align-items: center;
 		background-color: rgba(0, 0, 0, 0.3);
@@ -601,7 +601,7 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	
+
 	.examples__item {
 		width: 48%;
 		margin-bottom: 30px;
