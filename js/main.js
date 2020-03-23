@@ -1,7 +1,6 @@
 console.log('JS is work');
 
-
-const	navBar     = document.querySelector('.page-header__navbar'),
+const	navBar = document.querySelector('.page-header__navbar'),
 	menuButton = document.querySelector('.navbar__menu-icon'),
 	menuIcon   = document.querySelector('.menu-icon__bar-line'),
 	navBarNav  = document.querySelector('.navbar__nav');
@@ -40,7 +39,6 @@ navBar.addEventListener('click', (e) => {
   }
 
   target = document.querySelector(`${link}`);
-  console.log(target.offsetTop);
   window.scrollTo({
     top: target.offsetTop,
     behavior: 'smooth'
