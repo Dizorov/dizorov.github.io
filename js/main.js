@@ -29,19 +29,36 @@ navBar.addEventListener('click', (e) => {
   e.preventDefault();
 
   let target, link;
-
-  if(e.target.closest('span')) {
+  if(e.target.classList.contains('nav__link_hover')) {
     link = e.target.parentElement.getAttribute('href');
+    target = document.querySelector(link);
+
+    if (menuIcon.classList.contains('menu-icon__bar-line--active')) {
+  		navBar.classList.remove('page-header__navbar--active');
+  		navBarNav.classList.remove('navbar__nav--active');
+  		menuIcon.classList.remove('menu-icon__bar-line--active');
+  	}
+
+    window.scrollTo({
+      top: target.offsetTop,
+      behavior: 'smooth'
+    })
   } else {
-    if (e.target.closest('a')) {
+    if (e.target.classList.contains('nav__link')) {
       link = e.target.getAttribute('href');
+      target = document.querySelector(link);
+
+      if (menuIcon.classList.contains('menu-icon__bar-line--active')) {
+    		navBar.classList.remove('page-header__navbar--active');
+    		navBarNav.classList.remove('navbar__nav--active');
+    		menuIcon.classList.remove('menu-icon__bar-line--active');
+    	}
+
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+      })
     }
   }
 
-  target = document.querySelector(link);
-
-  window.scrollTo({
-    top: target.offsetTop,
-    behavior: 'smooth'
-  })
 })
