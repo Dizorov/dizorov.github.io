@@ -169,8 +169,8 @@ body {
 .welcome__text {
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: 600;
-	letter-spacing: 1px;
+	font-weight: 500;
+	letter-spacing: 0;
 }
 
 .welcome__button {
@@ -185,7 +185,9 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	border: 2px solid #f0f0f0;
+  border-radius: 4px;
 	transition: .12s ease-out;
+  letter-spacing: 0.03em;
 }
 
 .welcome__button:hover {
@@ -651,7 +653,10 @@ body {
 	.welcome__text {
 		font-size: 21px;
 		line-height: 32px;
-		letter-spacing: 1px;
+		letter-spacing: 0;
+    max-width: 800px;
+    text-align: center;
+    margin: 21px auto;
 	}
 
 	.flex-container {
