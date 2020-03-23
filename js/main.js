@@ -38,7 +38,8 @@ navBar.addEventListener('click', (e) => {
     }
   }
 
-  target = document.querySelector(`${link}`);
+  target = document.querySelector(link);
+
   window.scrollTo({
     top: target.offsetTop,
     behavior: 'smooth'
